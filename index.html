@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="HolyGrail">
+    <header>我的个人网站</header>
+    <div class="HolyGrail-body">
+      <main class="HolyGrail-content">主页面</main>
+      <nav class="HolyGrail-nav">导航栏</nav>
+      <aside class="HolyGrail-ads">侧边栏</aside>
+    </div>
+    <footer>底部导航</footer>
+  </body>
+  <style>
+    .HolyGrail {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    header,
+    footer {
+      background-color: rgb(150, 150, 150);
+      flex: 1;
+    }
+
+    .HolyGrail-body {
+      display: flex;
+      flex: 1;
+    }
+
+    .HolyGrail-content {
+      flex: 1;
+    }
+
+    .HolyGrail-nav,
+    .HolyGrail-ads {
+      /* 两个边栏的宽度设为12em */
+      flex: 0 0 12em;
+    }
+
+    .HolyGrail-nav {
+      /* 导航放到最左边 */
+      order: -1;
+    }
+  </style>
+</html>
